@@ -1,0 +1,53 @@
+body{
+  background-color: #B3FFC7;
+  color: rgb(22, 22, 22);
+}
+.tcover{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  height: 98vh;
+}
+
+thead tr th{
+  background-color: #79E8B3;
+}
+
+tbody tr:hover{
+background-color: #8bf8a8;
+}
+h1{
+  margin-bottom: 48px;
+  font-size: 38px;
+  line-height: 44px;
+  margin-top: 20px;
+}
+button{
+  margin-right: 17px;
+  float: right;
+  display: inline-block;
+  padding: 9px 15px;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #80b1ff;
+  width: 100px;
+
+}
+button:hover{
+  background-color: #A4A4F4;
+}
+.table{
+  margin: auto;
+}
+p{
+font-size: 18px;
+}
+img{
+height:50px;
+width:100px;
+}

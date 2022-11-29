@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Link Shortener</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+<!--    <link rel="shortcut icon" href="{{ url_for('static', filename='shortit.ico') }}">-->
+  </head>
+  <body>
+<!--  <img src="{{url_for('static', filename='shortit.png')}}" />-->
+    <button class="butn btn" onclick="window.location.href = '/user'">History</button>
+    <button class="btn butn" onclick="window.location.href = '/signout'">Sign Out</button>
+    <div class="cover">
+      <div class="main">
+    <div class="form">
+    <h1>Link Shortner</h1>
+
+    <br><br>
+    <form action="/generate" method="post">
+      <input class="in" name="url" type="url" placeholder="Url" required><br><br>
+      <input class="in" name="special" type="text" placeholder="For Special Link"><br><br>
+      <input class="login btn" type="submit" value="Submit">
+      <br><br>
+      
+    </form>
+    
+    <p>{{short}}</p>
+  </div> 
+</div>
+</div>
+  <div class="foot">
+      <footer>
+    Made with ❤️ by Podium
+  </footer>
+  </body>
+  <script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+</html>

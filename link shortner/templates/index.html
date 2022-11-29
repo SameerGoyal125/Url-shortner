@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login page</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+<!--    <link rel="shortcut icon" href="{{ url_for('static', filename='shortit.ico') }}">-->
+  </head>
+  <body>
+<!--  <img src="{{url_for('static', filename='shortit.png')}}" />-->
+    <button class="btn butn" onclick="window.location.href = '/signup'">Sign Up</button>
+    <div class="cover">
+      <div class="main">
+    <div class="form">
+      <h1>Login</h1>
+      <form action="/" method="post">
+        <input name="user" type="text" class="in" placeholder="Username/Email" required><br><br>
+        <input  class="in" name="password" type="password" placeholder="Password"required><br><br>
+        <input class="login btn" type="submit" name="login" value="Login">
+        
+        <br><br>
+       
+      </form>
+     
+      <p>{{message}}</p>
+    </div>
+  </div>
+
+  </div>
+    <div class="foot">
+      <footer>
+    Made with ❤️ by Podium
+  </footer>
+    </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>User History</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='table.css') }}">
+<!--  <link rel="shortcut icon" href="{{ url_for('static', filename='shortit.ico') }}">-->
+</head>
+
+<body>
+<!--<img src="{{url_for('static', filename='shortit.png')}}" />-->
+  <div class="main">
+    <div class="butn">
+      <button onclick="window.location.href = '/generate'">Generate</button>
+      <button onclick="window.location.href = '/signout'">Sign Out</button>
+    </div>
+    <div class="tcover">
+      <div class="table">
+        <h1>Your History</h1>
+        <p>You don't generated any link. Generate one now.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

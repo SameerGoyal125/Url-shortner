@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Signup page</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+<!--    <link rel="shortcut icon" href="{{ url_for('static', filename='shortit.ico') }}">-->
+  </head>
+  <body>
+<!--  <img src="{{url_for('static', filename='shortit.png')}}" />-->
+    <div class="cover">
+      <div class="main">
+    <div class="form">
+    <h1>Sign Up</h1>
+      <form action="/verify" method="post">
+        <input class="in" name="otp" type="text" placeholder="OTP"required><br><br>
+        <input class="login btn" type="submit" name="Sign Up" value="Sign Up">
+        
+        <br><br>
+        <p> {{message}}</p>
+       
+      </form>
+    </div>
+  </div>
+  </div>
+<div class="foot">
+      <footer>
+    Made with ❤️ by Podium
+  </footer>
+
+
+    </body>
+</html>
